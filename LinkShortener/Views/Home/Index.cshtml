@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@* Views/Home/Index.cshtml *@
+
+<body class="container mt-5">
+    <div class="card shadow p-4" style="max-width: 600px; margin: 0 auto;">
+        <h1 class="text-center mb-4">Сократить ссылку</h1>
+
+        <!-- Форма для ввода URL -->
+        <div class="mb-3">
+            <input type="url"
+                   id="originalUrl"
+                   class="form-control"
+                   placeholder="Введите длинную ссылку (например, https://example.com)">
+        </div>
+
+        <!-- Кнопка для генерации -->
+        <button onclick="generateShortUrl()"
+                class="btn btn-primary w-100 mb-3">
+            Сократить
+        </button>
+
+        <!-- Блок для вывода результата -->
+        <div id="result" class="text-center"></div>
+    </div>
+
+    <script src="~/js/shortener.js"></script>
+</body>
