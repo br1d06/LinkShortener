@@ -32,7 +32,7 @@ namespace LinkShortener.DAL.Repositories
             return linkInfo;
         }
 
-        public void SaveAsync()
+        public async void SaveAsync()
         {
             await _context.SaveChangesAsync();
         }
