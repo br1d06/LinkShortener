@@ -1,5 +1,5 @@
 using System.Diagnostics;
-using LinkShortener.Models;
+using LinkShortener.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LinkShortener.Controllers.Mvc
