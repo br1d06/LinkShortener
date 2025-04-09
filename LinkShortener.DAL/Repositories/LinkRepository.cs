@@ -34,7 +34,7 @@ namespace LinkShortener.DAL.Repositories
 
         public void SaveAsync()
         {
-            _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
         }
     }
 }
